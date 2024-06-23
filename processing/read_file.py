@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 from PIL import Image
-from solver.solver import recurse, print_sol
 
 
 def color_distance(c1, c2):
@@ -55,8 +54,8 @@ def process_file(image_path):
 
     x, y, w, h = cv2.boundingRect(grid_contour)
 
-    cell_width = w // 10
-    cell_height = h // 10
+    cell_width = w // 11
+    cell_height = h // 11
 
     color_grid = []
     for row in range(11):

@@ -124,9 +124,9 @@ def print_sol(sol):
         s = ""
         for entry in line:
             if entry[1]:
-                s += f"{str(entry[0])}x\t"
+                s += f"({str(entry[0])})\t"
             else:
-                s += f"{str(entry[0])}.\t"
+                s += f"{str(entry[0])}\t"
         print(s)
 
 
